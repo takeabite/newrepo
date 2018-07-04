@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>this is title</title>
+</head>
+<body>
+    <input id="toggle_button" type="button" value="night" onclick="change_mode()">
+    <h1>watch how it changes!!</h1>
+
+    <ul>
+        <li><a href="page1.html">page1</a></li>
+        <li><a href="page2.html">page2</a></li>
+        <li><a href="page3.html">page3</a></li>
+    </ul>
+</body>
+
+<script>
+function change_mode()
+{
+    if(document.body.style.backgroundColor!="black")
+    {
+        document.body.style.backgroundColor="black";
+        document.body.style.color="white";
+        document.querySelector('#toggle_button').value="day";
+    }
+    else if(document.body.style.backgroundColor==="black")
+    {
+        document.body.style.backgroundColor="white";
+        document.body.style.color="black";
+        document.querySelector('#toggle_button').value="night";
+    }
+}
+</script>
+</html>
